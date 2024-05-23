@@ -1,0 +1,32 @@
+.solar-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 200px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .solar-table th, .solar-table td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: left;
+  }
+  
+  .solar-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .solar-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .solar-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .solar-table th {
+    background-color: #007BFF;
+    color: white;
+  }
+  

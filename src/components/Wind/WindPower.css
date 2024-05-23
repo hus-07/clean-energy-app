@@ -1,0 +1,257 @@
+/* Styles for the About Wind Power section */
+.about-wind-power {
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-wind-power h2 {
+    color: #0078d4;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-wind-power h3 {
+    color: #0078d4;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .about-wind-power ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-wind-power li {
+    margin-bottom: 10px;
+  }
+  
+  .about-wind-power .bullet {
+    color: #0078d4;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Styles for Wind Turbine Buttons */
+  .wind-turbine-button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .wind-turbine-button {
+    background-color: #333333; /* Nice shade of black */
+    color: white;
+    border: none;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wind-turbine-button:hover {
+    background-color: #555555; /* Slightly lighter shade of black */
+    transform: scale(1.05);
+  }
+  
+  .wind-turbine-button:focus {
+    outline: none;
+  }
+  
+  .wind-turbine-button.clicked {
+    background-color: #111111; /* Darker shade of black */
+  }
+  
+  .wind-turbine-button.clicked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(transparent 50%, #fff 50%);
+    background-size: 100% 2px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotateBlades 2s linear infinite;
+  }
+  
+  @keyframes rotateBlades {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  /* General content styling */
+  .content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .content h2, .content h3 {
+    color: #21292f;
+  }
+  
+  .content ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .content li {
+    margin-bottom: 10px;
+  }
+  
+  .content-details .details {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table styling */
+  .table-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-section h3 {
+    color: #0078d4;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #cccccc); /* Gradient for table */
+  }
+  
+  .cost-table th, .cost-table td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: left;
+  }
+  
+  .cost-table th {
+    background-color: #333333; /* Nice shade of black */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .cost-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .cost-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .cost-table th {
+    background-color: #333333;
+    color: white;
+  }
+  
+  /* Tax credits and standards styling */
+  .tax-credits-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tax-credits-section h3 {
+    color: #0078d4;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tax-credits-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Pros and Cons table styling */
+  .pros-cons-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pros-cons-section h3 {
+    color: #0078d4;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .pros-cons-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .pros-cons-table th, .pros-cons-table td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: left;
+  }
+  
+  .pros-cons-table th {
+    background-color: #333333; /* Nice shade of black */
+    color: white;
+    text-align: center;
+  }
+  
+  .pros-cons-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .pros-cons-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Graph styling */
+  .graph-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(2, 0, 0, 0.1);
+  }
+  
+  .graph-container h3 {
+    color: #0078d4;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  

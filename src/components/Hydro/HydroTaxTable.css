@@ -1,0 +1,44 @@
+.table-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-section h3 {
+    color: #0078d4;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #cccccc); /* Gradient for table */
+  }
+  
+  .cost-table th, .cost-table td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: left;
+  }
+  
+  .cost-table th {
+    background-color: #333333; /* Nice shade of black */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .cost-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .cost-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

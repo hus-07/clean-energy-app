@@ -1,0 +1,46 @@
+.wind-turbine-button {
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 50%; /* Circular shape */
+    margin: 10px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.7); /* Glow effect */
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wind-turbine-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.wind-turbine-button:focus {
+    outline: none;
+}
+
+.wind-turbine-button.clicked {
+    background-color: #1e7e34; /* Darker green when clicked */
+    animation: spin 1s linear infinite; /* Wind turbine spin animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px; /* Add gap between buttons */
+}
